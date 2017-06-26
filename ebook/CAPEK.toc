@@ -1,0 +1,10 @@
+\select@language {greek}
+\select@language {brazilian}
+\contentsline {chapter}{Introdu\IeC {\c c}\IeC {\~a}o, por Aleksandar Jovanovi\IeC {\'c}}{9}
+\contentsline {section}{Karel Tch\IeC {\'a}pek e o inusitado\penalty -\@M a servi\IeC {\c c}o da Humanidade}{10}
+\contentsline {part}{\MakeTextLowercase {a f\IeC {\'a}brica de rob\IeC {\^o}s}}{25}
+\contentsline {chapter}{Personagens}{27}
+\contentsline {chapter}{Abertura}{29}
+\contentsline {chapter}{Ato \textsc {i}}{61}
+\contentsline {chapter}{Ato \textsc {ii}}{97}
+\contentsline {chapter}{Ato \textsc {iii}}{125}

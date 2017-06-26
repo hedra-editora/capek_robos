@@ -1,0 +1,353 @@
+\documentclass[11pt]{hedrabook}
+\usepackage[brazilian]{babel}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hedracrop}
+\usepackage{hedrabolsolayout}
+\usepackage[protrusion=true,expansion]{microtype}
+\usepackage{comment,lipsum,footmisc}
+\usepackage[minionint,mathlf]{MinionPro}
+
+\makeatletter
+  \renewenvironment{frontispiciopage}[2]{
+    \thispagestyle{empty}
+    \def\@ano{#2}
+    \vspace*{\stretch{1}}
+    \begin{fancytable}{#1}%
+      \putline{\hspace*{36mm}}{}
+      \ThirdpageAuthorCathegory               %comentar quando não houver AUTOR
+      \putline{T\'itulo}{\textsc{\@title}}}{
+      \putline{S\~ao Paulo}{\@ano\vspace{5mm}}
+      \bigline{}{}{
+        \setlength{\unitlength}{1mm}%
+        \hspace{1mm}\begin{picture}(25,25)(0,2.2)%
+          %\color{white}
+          \put(0, 0){\line(1, 0){2}}
+          \put(0, 0){\line(0, 1){2}}
+          \put(23, 0){\line(1, 0){2}}
+          \put(25, 0){\line(0, 1){2}}
+          \put(0, 25){\line(1, 0){2}}
+          \put(0, 23){\line(0, 1){2}}
+          \put(23, 25){\line(1, 0){2}}
+          \put(25, 23){\line(0, 1){2}}
+          \put(5.8,13){\makebox(0,0)[l]{\fontencoding{OT1}\fontfamily{ptm}\selectfont\logosize{}hedra}}%
+        \end{picture}}
+      \bigline{}{%
+        \setlength{\unitlength}{\baselineskip}%
+        \begin{picture}(0,0)(0,0)%
+          \put(0,1){\makebox(0,0)[l]{\interno@traco}}%
+          \put(0,2.5){\makebox(0,0)[l]{\interno@traco}}%
+          \put(0,3.5){\makebox(0,0)[l]{\interno@traco}}%
+          \put(0,5){\makebox(0,0)[l]{\interno@traco}}%
+          \put(0,8.7){\makebox(0,0)[l]{\interno@traco}}%
+        \end{picture}}{%
+        \setlength{\unitlength}{\baselineskip}%
+        \hspace{\stretch{1}}\begin{picture}(0,0)(-4,0)%
+          \put(-4,1){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,3){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,4){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,10){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,11){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,12){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,16){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,17){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,21){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,23){\makebox(0,0)[l]{\interno@traco}}%
+          \put(-4,24){\makebox(0,0)[l]{\interno@traco}}%
+        \end{picture}}
+    \end{fancytable}}
+\makeatother
+
+\AtBeginDocument{%
+  \selectlanguage{brazilian}
+  \fontsize{11pt}{13.2pt}\selectfont
+  \parskip=0pt
+  \setlength{\unitlength}{1mm}%
+  \setcounter{secnumdepth}{-2}%
+  \pagestyle{plain}}
+
+
+\begin{document}
+
+\author{Karel Tchápek}
+\title{A fábrica de robôs}
+\begin{frontispiciopage}{4cm}{2013}
+  %comentar/modificar linhas abaixo conforme necessário
+  \putline{Tradução}{\textsc{Vera Machac}}
+%  \putline{Introdução}{\textsc{}}
+%  \putline{Organização e tradução}{\textsc{}}
+\end{frontispiciopage}
+
+
+\section{Sobre o autor}
+
+Nascido em 1890 na Boêmia,  Karel Tchápek ocupou o posto de maior escritor
+tcheco do início do século XX antes de seu conterrâneo e contemporâneo Franz
+Kafka, tendo suas obras traduzidas e elogiadas por críticos, dramaturgos e
+escritores na Inglaterra, América e Alemanha.  Além de romances de detetive,
+peças satíricas, ensaios críticos, relatos de viagem e artigos, destaca-se na
+sua produção diversas obras de cunho fantástico. Neste campo, é pela peça de
+1920 \textit{A Fábrica de Robôs} (\textit{R.U.R.: Rosumoví univerzalní
+roboti}), que Karel Tchápek é mais lembrado hoje, principalmente entre os
+leitores e críticos de Ficção Científica, por ter sido nesta obra que surgiu a
+palavra \textit{robô}. Dentre as razões para o seu gradual ostracismo até a
+metade do século XX está o fato de que Tchápek escreveu usando o vernáculo de
+sua terra, em uma época em que o tcheco nem existia como língua oficial (a
+Tchecoslováquia foi criada como país apenas após a Primeira Guerra Mundial).
+Kafka, por outro lado, construiu sua carreira usando a mais universal língua
+alemã, permitindo assim que seus escritos ultrapassassem as frágeis e instáveis
+fronteiras de seu país do período do entre guerras para alcançar o mundo. Este
+fato ajudou também a obra de Kafka a escapar da censura do regime comunista que
+assumiu o controle do país; o que não ocorreu no caso de Tchápek, cujas
+posições políticas sobre democracia e cultura foram repudiadas quando da
+ascensão do Comunismo na Tchecoslováquia, banindo toda a produção artística do
+autor de \textit{A Fábrica de Robôs} por quatro décadas. Nos últimos anos, no
+entanto, os escritos deste editor, escritor, dramaturgo e ensaísta vêm sendo
+resgatados por outros escritores da atual República Tcheca, como Milan Kundera
+e Ivan Klíma. Karel Tchápek faleceu em Praga, no dia de Natal de 1938 em
+decorrência de uma pneumonia.  
+
+\section{Síntese do enredo} 
+
+\textit{A Fábrica de Robôs} é uma peça teatral constituída de uma abertura e
+três atos nos quais é descrito como, no passado, a pesquisa com produtos
+químicos realizada pelo fisiologista Rossum resultou na descoberta de uma
+matéria sintética capaz de simular a vida. Após alguns experimentos fracassados
+com animais, este cientista decidiu criar seres humanos.  Anos depois, já como
+produtos fabricados pela Robôs Universais Rossum, estas criaturas chamadas de
+robôs (do tcheco \textit{robota}, “trabalho forçado”) passaram a ser utilizadas
+em larga escala nas indústrias e nas residências para toda sorte de trabalho,
+tornando sua presença um elemento indispensável para a própria manutenção da
+sociedade.  Gradualmente, porém, os robôs passam a se ressentir da maneira como
+são tratados e tomam consciência de sua força frente à humanidade, decidindo se
+rebelar contra seus criadores e promover um genocídio de todos os seres
+humanos, com exceção de Alquist  ---  engenheiro civil da Robôs Universais
+Rossum. O tempo passa e Alquist se mostra incapaz de reproduzir a formula para
+a criação de novas criaturas artificiais, apontando para o fim tanto dos robôs
+quanto da espécie humana. A esperança de um novo começo, todavia, surge com o
+casal de robôs Primus e Helena, que demonstram serem mais evoluídos
+emocionalmente em relação aos seus pares robóticos por estarem apaixonados. Na
+última cena da peça o velho engenheiro abençoa o casal como os novos Adão e
+Eva, que, como tais, irão repovoar o mundo com uma nova espécie. 
+
+
+\section{BOX A Revolução industrial}
+
+O termo “Revolução Industrial” designa o processo de intenso progresso
+científico e tecnológico ocorrido principalmente na Europa entre a metade do
+século XVIII ao fim do século XIX e seu impacto na esfera econômica, política,
+cultural e artística da sociedade ocidental. Ao primeiro momento da Revolução
+Industrial (1760-1860), caracterizado pelo aparecimento das primeiras fábricas,
+seguiu-se o segundo momento (1860-1900), marcado pelo surgimento e aplicação de
+diversos produtos tecnológicos e científicos, tais como a luz elétrica, o
+telefone, a locomotiva elétrica e o motor a diesel. 
+
+\section{Propostas de atividades} 
+
+\paragraph{1.} 
+
+O século XIX como um todo e as primeiras décadas do século XX foram definidos
+pelo paradoxal efeito do racionalismo científico em diversas esferas da
+sociedade europeia. Se, por exemplo, as inovações tecnológicas e científicas
+fomentadas pela Revolução Industrial aumentaram a produção de alimentos no
+campo, elas também contribuíram para a extinção dos empregos nas áreas rurais e
+o consequente aumento desorganizado das cidades. O mesmo pode ser dito das
+ideias e teorias de Charles Darwin, Karl Marx e Sigmund Freud cujos benefícios
+para a ciência de suas respectivas áreas também conviveram com a quebra, perda
+ou questionamento de valores provocados por estes mesmos estudos. A partir
+deste cenário, que encontra equivalência na atualidade com a globalização e os
+avanços da informática, pode-se solicitar aos alunos que debatam como Franz
+Kafka e Karel Tchápek abordam respectivamente em \textit{A Metamorfose} (1915)
+e \textit{A Fábrica de Robôs} (1920), o processo de angústia, ansiedade e
+alienação vivenciado pelo homem de virada de século. Sugere-se que em um
+primeiro momento o professor divida a classe em dois grupos, ficando cada um
+responsável pela leitura e análise de uma obra. Na sequência, a partir da troca
+de interpretações sobre cada texto entre os grupos, espera-se que os alunos
+percebam os pontos de contatos entre elementos aparentemente tão díspares entre
+si quanto insetos e robôs.
+
+
+\paragraph{2.}
+
+\begin{quote}
+  Domin  ---  \ldots{} Mas em até 10 anos a Robôs Universais Rossum produzirá
+  tanto trigo, tantos tecidos, tanto de tudo, que digamos: as coisas não terão
+  mais valor. Agora cada um pega o que precisa. Não há miséria. Sim, estarão
+  desempregados. Mais aí não existirá mais o trabalho. Tudo será feito pelas
+  máquinas vivas. As pessoas vão fazer apenas o que gostam. Vão viver apenas para
+  se aperfeiçoar. (p. 56)
+\end{quote}
+
+Desde a Grécia Antiga, com \textit{A República} (367 A.C.), de Platão,
+passando pelo Renascimento com \textit{Utopia} (1516), de Thomas More, até o
+século vinte com \textit{A Ilha} (1962), de Aldous Huxley, a idealização de um
+lugar onde a paz, a prosperidade e a justiça reinam tem sido um traço
+recorrente da história da humanidade. A fala do diretor da fábrica de robôs
+Harry Domin em \textit{A Fábrica de Robôs} exemplifica também uma utopia. Tanto
+em forma de ideias religiosas e filosóficas quanto de projetos literários e
+políticos, a persistência da imaginação utópica sugere que o ser humano anseia
+por um mundo perfeito que difira radicalmente do modelo imperfeito vivenciado
+diariamente. Mas o que seria então um mundo perfeito? A partir desta questão,
+sugere-se que, após a leitura da peça, os alunos elaborem individualmente e sem
+identificação de nomes, pequenas descrições do seu modelo de mundo perfeito.
+Após esse exercício o professor promove a troca de redações entre os alunos
+solicitando que estes observem as possíveis contradições ou exclusões da visão
+de utopia por eles analisados. Espera-se ao final da atividade que os alunos
+percebam o perigo dos discursos utópicos, uma vez que, por mais idealistas que
+estes possam ser, jamais conseguirão contemplar ou evitar a universalidade de
+anseios ou medos do ser humano. 
+
+
+\paragraph{3.}
+
+\textit{A Fábrica de Robôs} divide em lados opostos seres humanos e robôs.
+Reproduza este cenário em sala de aula simulando um tribunal com a defesa de
+cada lado sendo feita por advogados dos humanos e robôs escolhidos entre os
+alunos. Os argumentos de defesa e acusação dos envolvidos devem ser retirados
+da fala dos personagens e do próprio desenrolar dos eventos na peça. Qual lado
+foi mais convincente? Cabe ao júri, formado pelos alunos, decidir o veredicto.
+Como atividade preparatória visando apresentar aos alunos a estrutura de um
+tribunal, recomenda-se a exibição do filme \textit{12 Homens e uma Sentença}
+(1957).  
+
+
+\paragraph{4.}
+
+Assim como \textit{A Fábrica de Robôs}, os filmes \textit{Matrix} (1999) e
+\textit{Eu, robô} (2004) se alinham ao contexto cultural de virada de século
+para discutir a relação homem X sociedade.  Mas quais seriam os pontos em comum
+entre esta peça de 1915 e as obras fílmicas produzidas no final do século
+passado? Sugere-se aqui a elaboração de uma proposta de produção de texto
+individual sobre o tema.
+
+
+\paragraph{5.}
+
+À luz da ciência de hoje, a descrição da origem e da composição dos robôs da
+peça de Karel Tchápek, se encaixam melhor na representação dos clones e
+androides da ficção científica moderna. Após chamar a atenção dos alunos para
+este fato, o professor pode pedir aos alunos que, em pequenos grupos,
+reescrevam a obra de Tchápek usando clones ou androides no lugar de robôs em um
+contexto de questões da atualidade, como o conflito entre o local e o
+globalizado e a influência das redes sociais nos relacionamentos pessoais,
+dentre outros temas. Como conclusão para a atividade, o professor pode propor
+aos alunos a representação da peça reescrita. 
+
+
+
+\section{Indicações para o professor}
+
+\bigskip
+
+\paragraph{Livros}
+
+\begin{description}\labelsep0ex\parsep0ex
+\newcommand{\tit}[1]{\item[\textnormal{\textsc{\MakeTextLowercase{#1}}}]}
+\newcommand{\titidem}{\item[\line(1,0){25}]}
+
+\tit{BERMAN}, Marshall. \textit{Tudo que é sólido desmancha no ar:} A aventura da
+modernidade. Trad. Carlos Moisés e Ana Ioratti. São Paulo: Companhia
+das Letras, 1986.
+
+\tit{BRECHT}, Bertold. \textit{Estudos sobre Teatro}. Trad. Fiama Pais Brandão. Rio
+de Janeiro: Nova Fronteira, 1978.
+
+\tit{COELHO}, Teixeira. \textit{O que é utopia}.\textbf{} 9 ed. São Paulo: Editora
+Brasiliense, 1992. (Coleção primeiros passos 12).
+
+\tit{FIKER}, Raul. \textit{Ficção científica}: ficção, ciência ou uma épica da
+época?\textit{} Porto Alegre: L\&PM, 1985.  (Coleção Universidade Livre).
+
+\tit{HALL}, Stuart. \textit{A identidade cultural na pós-modernidade.} Trad. Tomaz
+Tadeu da Silva e Guacira Lopes Louro. 3ed. Rio de Janeiro: DP\&A Editora, 1999.
+
+\tit{HENDERSON}, William Otto. \textit{A revolução industrial}: 1780-1914. Trad.
+Maria Ondina.\textit{} São Paulo: Verbo: Ed. Da Universidade de São Paulo,
+1979.
+
+\tit{MARX}, Karl, ENGELS, Friedrich. \textit{Manifesto comunista}. Trad. Marcus
+Mazzari. São Paulo: Editora Hedra, 2010.
+
+\tit{PAQUOT}, Thierry. \textit{A utopia}:\textit{} ensaio acerca do ideal. Trad.
+Maria Helena Kuhner. Rio de Janeiro: Difel, 1999.
+
+\tit{SILVA}, Alexander Meireles. \textit{Literatura Inglesa para Brasileiros}: curso
+completo de literatura e cultura inglesa para estudantes brasileiros. 2ed. Rio
+de Janeiro: Ciência Moderna, 2005.
+
+\end{description}
+
+\paragraph{Informações sobre Karel Tchápek}
+
+\begin{description}\labelsep0ex\parsep0ex
+\newcommand{\tit}[1]{\item[\textnormal{\textsc{\MakeTextLowercase{#1}}}]}
+\newcommand{\titidem}{\item[\line(1,0){25}]}
+
+\tit{CLUTE}, John. Karel Čapek. CLUTE, John. (Ed.). \textit{Science Fiction:} The
+Illustrated Encyclopedia. London: Dorling Kindersley, 1995, p. 119.
+
+\tit{SUVIN}, Darko. Karel Čapek, Or the Aliens Amongst Us. In: SUVIN, Darko\textit{.
+Metamorphoses of Science Fiction}: on the poetics and history of a literary
+genre. New York: Yale University Press, 1979. p. 270-284.
+
+\end{description}
+
+\paragraph{Outros livros}
+
+\begin{description}\labelsep0ex\parsep0ex
+\newcommand{\tit}[1]{\item[\textnormal{\textsc{\MakeTextLowercase{#1}}}]}
+\newcommand{\titidem}{\item[\line(1,0){25}]}
+
+\tit{BRADBURY}, Ray. \textit{Fahrenheit 451}. Trad. Cid Knipel. São Paulo: Biblioteca
+Azul, 2012.
+
+\tit{HUXLEY}, Aldous. \textit{Admirável Mundo Novo}. Trad. Vidal de Oliveira e Lino
+Vallandro. São Paulo: Globo, 2001. 
+
+\tit{KAFKA}, Franz. \textit{A Metamorfose}. Trad. Celso Donizete Cruz. São
+Paulo: Hedra, 2009.
+
+\tit{ORWELL}, GEORGE. \textit{A revolução dos bichos}. Trad. Heitor Aquino Ferreira.
+São Paulo: Companhia das Letras, 2007.
+
+\tit{SHELLEY}, Mary. \textit{Frankenstein}. Trad.  Miécio Araújo Jorge Honkins. São
+Paulo: L\&PM Editores, 2005.
+
+\end{description}
+
+\paragraph{Filmes}
+
+\begin{description}\labelsep0ex\parsep0ex
+\newcommand{\tit}[1]{\item[\textnormal{\textsc{\MakeTextLowercase{#1}}}]}
+\newcommand{\titidem}{\item[\line(1,0){25}]}
+
+\tit{}\textit{Metrópolis} (1927), de Fritz Lang
+
+\tit{}\textit{Tempos Modernos} (1936), de Charles Chaplin
+
+\tit{}\textit{12 Homens e uma Sentença} (1957), de Sidney Lumet
+
+\tit{}\textit{Fahrenheit 451} (1966), de François Truffaut
+
+\tit{}\textit{Matrix} (1999), dos irmãos Wachowski
+
+\tit{}\textit{Eu, Robô} (2004), de Alex Proyas
+
+\tit{}\textit{O Preço do Amanhã} (2011), de Andrew Niccol
+
+\end{description}
+
+\paragraph{Na internet}
+
+\begin{description}\labelsep0ex\parsep0ex
+\newcommand{\tit}[1]{\item[\textnormal{\textsc{\MakeTextLowercase{#1}}}]}
+\newcommand{\titidem}{\item[\line(1,0){25}]}
+
+\tit{}Karel Capek website (Informações em inglês sobre a vida e a obra do artista):
+http://capek.misto.cz/\hfil\break english/
+
+\end{description}
+
+
+\end{document}
